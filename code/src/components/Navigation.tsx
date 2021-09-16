@@ -37,10 +37,9 @@ const NavigationBar = styled.div`
   height: 80px;
   background-color: ${Gray};
   justify-content: space-between;
-  margin: 2px;
+  margin-bottom: 25px;
   align-items: center;
   border-radius: 2px;
-  box-shadow: 0px 1px 10px #999;
   @media (min-width: 768px) {
     justify-content: space-between;
   }
