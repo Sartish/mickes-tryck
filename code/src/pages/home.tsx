@@ -8,6 +8,8 @@ import LottieAnimation from '../components/LottieAnimation';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import Quote from '../components/Quote';
+import Mollan from '../components/Mollan';
+import TshirtPicture from '../components/TshirtPicture';
 
 const HomePage: React.FC<IPage> = () => {
   return (
@@ -15,22 +17,43 @@ const HomePage: React.FC<IPage> = () => {
       <Navigation />
       <Slider></Slider>
       <Header />
-      <WrappingSection>
+      <WrappingFirstSection>
         <StepsContainer>
           <Steps />
         </StepsContainer>
         <LottieContainer>
           <LottieAnimation />
         </LottieContainer>
-      </WrappingSection>
+      </WrappingFirstSection>
       <Quote />
+      <WrappingSecondSection>
+        <MollanContainer>
+          <Mollan />
+        </MollanContainer>
+        <TshirtpictureContainer>
+          <TshirtPicture />
+        </TshirtpictureContainer>
+      </WrappingSecondSection>
     </>
   );
 };
 
 export default HomePage;
 
-export const WrappingSection = styled.section`
+export const WrappingFirstSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const WrappingSecondSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +73,18 @@ export const StepsContainer = styled.div`
 `;
 
 export const LottieContainer = styled.div`
+  @media (min-width: 768px) {
+    margin: 50px;
+  }
+`;
+
+export const TshirtpictureContainer = styled.div`
+  @media (min-width: 768px) {
+    margin: 50px;
+  }
+`;
+
+export const MollanContainer = styled.div`
   @media (min-width: 768px) {
     margin: 50px;
   }

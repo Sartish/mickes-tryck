@@ -2,6 +2,7 @@ import React from 'react';
 // import apple from '../assets/apple.png';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
+import logo from '../assets/logo.png';
 
 const Navigation: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Navigation: React.FC = () => {
         <Hamburger></Hamburger>
         <Logo>
           <NavLink style={{ textDecoration: 'none' }} to="/">
-            hej
+            <img style={{ display: 'flex', width: 200 }} src={logo} alt="hej" />
           </NavLink>
         </Logo>
         <RightNav>
