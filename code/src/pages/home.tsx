@@ -10,6 +10,7 @@ import Header from '../components/Header';
 import Quote from '../components/Quote';
 import Mollan from '../components/Mollan';
 import TshirtPicture from '../components/TshirtPicture';
+import Footer from '../components/Footer';
 
 const HomePage: React.FC<IPage> = () => {
   return (
@@ -34,6 +35,7 @@ const HomePage: React.FC<IPage> = () => {
           <TshirtPicture />
         </TshirtpictureContainer>
       </WrappingSecondSection>
+      <Footer />
     </>
   );
 };

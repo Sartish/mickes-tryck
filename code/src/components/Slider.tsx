@@ -3,6 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import Items from './Items';
 // import apelisner from '../assets/apelsiner.png';
 // import sliderOne from '../assets/sliderOne.jpg';
+// import woman from '../assets/woman.png';
 import '../App.css';
 
 // breakpoints, identifying when next item will be shown
@@ -24,9 +25,9 @@ const Slider: React.FC<any> = () => {
       className="slider"
       itemPadding={[0]}
     >
-      <Items>{/* <img src={apelisner} alt="hej" /> */}</Items>
-      <Items>{/* <img src={sliderOne} alt="hej" />{' '} */}</Items>
-      <Items>"Det miljövänliga alternativet"</Items>
+      <Items>{/* <img src={woman} alt="hej" /> */}</Items>
+      <Items>{/* <img src={woman} alt="hej" /> */}</Items>
+      <Items>{/* <img src={woman} alt="hej" /> */}</Items>
     </Carousel>
   );
 };

@@ -27,7 +27,6 @@ export const WrappingLottie = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  border: 2px black solid;
 `;
 
 export const Lottie = styled.div`

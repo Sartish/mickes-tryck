@@ -31,12 +31,11 @@ export default Navigation;
 
 const ParagraphFont = "'Roboto', sans-serif;";
 const blue = '#262A53';
-const Gray = '#F5F5F5';
+// const Gray = '#F5F5F5';
 
 const NavigationBar = styled.div`
   display: flex;
   height: 80px;
-  background-color: ${Gray};
   justify-content: space-between;
   margin-bottom: 25px;
   align-items: center;

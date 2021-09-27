@@ -1,29 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Quote: React.FC<any> = () => {
+const Footer: React.FC<any> = () => {
   return (
     <>
       <Container>
-        <Heading>
-          “Hos Micke får man personlig service, och lokalen liggger mitt i möllan, hippie centrum!”
-        </Heading>
+        <Heading>@copyright</Heading>
       </Container>
     </>
   );
 };
 
-export default Quote;
+export default Footer;
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #262a53;
+  height: 50px;
 `;
 export const Heading = styled.h1`
-  font-size: 30px;
+  font-size: 22px;
   display: flex;
-  color: #262a53;
-  width: 600px;
+  color: white;
   font-family: 'Arvo', serif;
-  line-height: 1.6;
+  margin: 0;
 `;

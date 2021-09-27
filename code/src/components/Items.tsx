@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import annanas from '../assets/annanas.png';
+// import annanas from '../assets/annanas.png';
+import woman from '../assets/woman.png';
 
 export default styled.div`
   display: flex;
@@ -7,8 +8,9 @@ export default styled.div`
   align-items: center;
   height: 500px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${annanas});
-  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${woman});
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 15px;
   font-size: 4em;
 `;
