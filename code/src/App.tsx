@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, RouteComponentProps } from 'react-router-dom';
 import routes from './config/routes';
+import 'normalize.css';
 
 const App: React.FC<{}> = (props) => {
   return (
