@@ -11,6 +11,7 @@ export default styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${woman});
   background-repeat: no-repeat;
   background-size: 100%;
+  object-fit: contain;
   margin: 15px;
   font-size: 4em;
 `;
