@@ -1,8 +1,9 @@
 import React from 'react';
 import IPage from '../interfaces/pages';
+import Form from '../components/Form';
 
 const OrderPage: React.FC<IPage> = () => {
-  return <h1>this is a order page </h1>;
+  return <Form />;
 };
 
 export default OrderPage;

@@ -2,7 +2,7 @@ import React from 'react';
 import IPage from '../interfaces/pages';
 // import NavBar from '../components/NavBar';
 import Navigation from '../components/Navigation';
-import Slider from '../components/Slider';
+// import Slider from '../components/Slider';
 import Steps from '../components/Steps';
 import LottieAnimation from '../components/LottieAnimation';
 import styled from 'styled-components';
@@ -11,12 +11,13 @@ import Quote from '../components/Quote';
 import Mollan from '../components/Mollan';
 import TshirtPicture from '../components/TshirtPicture';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 
 const HomePage: React.FC<IPage> = () => {
   return (
     <>
       <Navigation />
-      <Slider></Slider>
+      <Banner />
       <Header />
       <WrappingFirstSection>
         <StepsContainer>

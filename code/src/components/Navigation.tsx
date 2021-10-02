@@ -15,7 +15,7 @@ const Navigation: React.FC = () => {
           </NavLink>
         </Logo>
         <RightNav>
-          <NavLink style={{ paddingLeft: 5, textDecoration: 'none' }} to="/newconcept">
+          <NavLink style={{ paddingLeft: 5, textDecoration: 'none' }} to="/step1">
             <OrderButton>Order</OrderButton>
           </NavLink>
           <NavLink style={{ paddingLeft: 5, textDecoration: 'none' }} to="/about">
