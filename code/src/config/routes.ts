@@ -8,7 +8,7 @@ import StepOne from '../components/StepOne';
 import StepTwo from '../components/StepTwo';
 import StepThree from '../components/StepThree';
 import StepFour from '../components/StepFour';
-import Form from '../components/Form';
+import Form from '../components/MainContainer';
 
 const routes: IRoute[] = [
   {

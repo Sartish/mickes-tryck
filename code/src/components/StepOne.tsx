@@ -7,20 +7,24 @@ import Input from './Input';
 import FormButton from './FormButton';
 import { useHistory } from 'react-router-dom';
 import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
+const schema = yup.object().shape({
+  firstname: yup.string().required(),
+  lastname: yup.string().required(),
+});
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  id: string;
-  label: string;
-  register: any;
-  error: any;
   firstname: string;
   lastname: string;
 }
 
-const StepOne: React.FC<InputProps> = ({ register }) => {
-  const { handleSubmit } = useForm<InputProps>();
+const StepOne: React.FC<InputProps> = () => {
+  const { handleSubmit, register } = useForm<InputProps>({
+    // @ts-ignore:next-line
+    resolver: yupResolver(schema),
+  });
   const history = useHistory();
 
   // our onsubmit receives data from type "profile"
