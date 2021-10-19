@@ -52,7 +52,7 @@ export const FileInput: React.FC<FileInputProps> = ({ control, name }) => {
           </Dropzone>
           <List>
             {value &&
-              value.map((f: any, index: any) => (
+              value.map((f: any, index: number) => (
                 <ListItem key={index}>
                   <ListItemIcon>
                     <InsertDriveFile />
