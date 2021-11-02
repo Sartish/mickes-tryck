@@ -3,8 +3,6 @@ import IPage from '../interfaces/pages';
 // import NavBar from '../components/NavBar';
 import Navigation from '../components/Navigation';
 // import Slider from '../components/Slider';
-import Steps from '../components/Steps';
-import LottieAnimation from '../components/LottieAnimation';
 import styled from 'styled-components';
 import Header from '../components/Header';
 import Quote from '../components/Quote';
@@ -12,20 +10,20 @@ import Mollan from '../components/Mollan';
 import TshirtPicture from '../components/TshirtPicture';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
+import Intructions from '../components/Instructions';
 
 const HomePage: React.FC<IPage> = () => {
   return (
     <>
-      <Navigation />
       <Banner />
       <Header />
       <WrappingFirstSection>
         <StepsContainer>
-          <Steps />
+          <Intructions />
         </StepsContainer>
-        <LottieContainer>
+        {/* <LottieContainer>
           <LottieAnimation />
-        </LottieContainer>
+        </LottieContainer> */}
       </WrappingFirstSection>
       <Quote />
       <WrappingSecondSection>
