@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import womancircles from '../assets/womancircles.png';
 import tshirt from '../assets/t-shirt.jpg';
 
 const Banner: React.FC<any> = () => {
@@ -45,12 +44,12 @@ export const BannerHeader = styled.div`
 export const BannerButton = styled.button`
   display: inline-block;
   color: white;
-  background-color: ${blue};
-  width: 150px;
-  border: 2px solid ${blue};
+  background-color: #ff7f50;
+  width: 180px;
+  border: none;
   text-align: center;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
   font-family: ${ParagraphFont};
   font-size: 20px;
@@ -58,7 +57,7 @@ export const BannerButton = styled.button`
   text-decoration: none;
   position: absolute; 
   top: 70%;
-  left: 10%;
+  left: 50%;
 
 transition: background-color 1s ease-in, color 1s ease-in;
 :hover {
