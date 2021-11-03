@@ -11,6 +11,7 @@ import TshirtPicture from '../components/TshirtPicture';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import Intructions from '../components/Instructions';
+import HeaderSustainability from '../components/HeaderSustainability';
 
 const HomePage: React.FC<IPage> = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage: React.FC<IPage> = () => {
         </LottieContainer> */}
       </WrappingFirstSection>
       <Quote />
+      <HeaderSustainability />
       <WrappingSecondSection>
         <MollanContainer>
           <Mollan />
@@ -64,6 +66,8 @@ export const WrappingSecondSection = styled.section`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
   }
 `;
 
@@ -81,12 +85,13 @@ export const LottieContainer = styled.div`
 
 export const TshirtpictureContainer = styled.div`
   @media (min-width: 768px) {
-    margin: 50px;
+    margin: 0px;
   }
 `;
 
 export const MollanContainer = styled.div`
   @media (min-width: 768px) {
-    margin: 50px;
+    margin: 0;
+    padding: 0;
   }
 `;

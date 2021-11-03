@@ -29,7 +29,9 @@ export const BannerContent = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  // margin: 50px;
+
+  @media (min-width: 768px) {
+  }
 `;
 
 export const BannerHeader = styled.div`
@@ -38,8 +40,11 @@ export const BannerHeader = styled.div`
   top: 20%;
   left: 10%;
   font-family: 'Scheherazade New', serif;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1em;
+  @media (min-width: 768px) {
+    font-size: 70px;
+  }
 `;
 export const BannerButton = styled.button`
   display: inline-block;
@@ -52,12 +57,16 @@ export const BannerButton = styled.button`
   padding: 20px;
   cursor: pointer;
   font-family: ${ParagraphFont};
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 10px;
   text-decoration: none;
   position: absolute; 
   top: 70%;
-  left: 50%;
+  left: 30%;
+  @media (min-width: 768px) {
+    top: 70%;
+    left: 50%;
+  }
 
 transition: background-color 1s ease-in, color 1s ease-in;
 :hover {
@@ -72,9 +81,13 @@ export const BannerLogo = styled.h1`
   color: white;
   font-size: 58px;
   position: absolute;
-  top: 5%;
-  right: 15%;
-  line-height: 3em;
+  top: 0;
+  right: 0;
+  margin: 0;
+  @media (min-width: 768px) {
+    top: 5%;
+    right: 15%;
+  }
 `;
 
 export const Dot = styled.span`

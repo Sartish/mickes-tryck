@@ -27,12 +27,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 48px;
+  font-size: 38px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   line-height: 1em;
   font-weight: 400;
   color: #262a53;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 export const Text = styled.div`

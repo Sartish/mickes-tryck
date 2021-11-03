@@ -28,7 +28,14 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
+
 export const Heading = styled.h1`
   color: white;
   position: absolute;
@@ -45,12 +52,21 @@ export const Image = styled.img`
   width: 200px;
   border-radius: 50%; /* så vi får bilden rund*/
   border: 4px solid white;
-  top: 20%;
-  left: 47%;
+  top: 15%;
+  left: 30%;
+  @media (min-width: 768px) {
+    top: 15%;
+    left: 47%;
+  }
 `;
 
 export const ImageContainer = styled.div`
   position: absolute;
-  top: 55%;
-  left: 47%;
+  top: 50%;
+  left: 30%;
+
+  @media (min-width: 768px) {
+    top: 55%;
+    left: 47%;
+  }
 `;

@@ -52,9 +52,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const StepOne = styled.div`
