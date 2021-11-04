@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import Intructions from '../components/Instructions';
 import HeaderSustainability from '../components/HeaderSustainability';
+import AboutMicke from '../components/AboutMicke';
 
 const HomePage: React.FC<IPage> = () => {
   return (
@@ -36,6 +37,7 @@ const HomePage: React.FC<IPage> = () => {
           <TshirtPicture />
         </TshirtpictureContainer>
       </WrappingSecondSection>
+      <AboutMicke />
       <Footer />
     </>
   );
@@ -61,6 +63,7 @@ export const WrappingSecondSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     flex-direction: row;
