@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Header: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <Wrapper>
-        <Heading>
+        <Heading data-aos="fade-up">
           Here are some of the benefits of <br /> your offer
         </Heading>
         <Text>
@@ -33,6 +38,7 @@ export const Heading = styled.h1`
   line-height: 1em;
   font-weight: 400;
   color: #262a53;
+  transition: 0.5s;
 
   @media (min-width: 768px) {
     font-size: 48px;

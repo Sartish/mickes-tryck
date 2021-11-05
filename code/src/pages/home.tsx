@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import IPage from '../interfaces/pages';
-// import NavBar from '../components/NavBar';
 import Navigation from '../components/Navigation';
 // import Slider from '../components/Slider';
 import styled from 'styled-components';
@@ -23,9 +22,6 @@ const HomePage: React.FC<IPage> = () => {
         <StepsContainer>
           <Intructions />
         </StepsContainer>
-        {/* <LottieContainer>
-          <LottieAnimation />
-        </LottieContainer> */}
       </WrappingFirstSection>
       <Quote />
       <HeaderSustainability />

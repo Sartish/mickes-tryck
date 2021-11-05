@@ -37,6 +37,11 @@ export const IMG = styled.img`
   background: #eee;
   margin: 0;
   width: 300px;
+  @media (prefers-reduced-motion: no-preference) {
+    .square-IMG {
+      animation: wipe-enter 1s 1;
+    }
+  }
 
   @media (min-width: 768px) {
     width: 500px;
