@@ -25,12 +25,13 @@ const ParagraphFont = "'Roboto', sans-serif;";
 
 export const BannerContent = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${tshirt});
-  height: 600px;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   @media (min-width: 768px) {
+    height: 600px;
   }
 `;
 
@@ -79,14 +80,15 @@ transition: background-color 1s ease-in, color 1s ease-in;
 export const BannerLogo = styled.h1`
   font-family: 'Permanent Marker', cursive;
   color: white;
-  font-size: 58px;
+  font-size: 38px;
   position: absolute;
   top: 0;
   right: 0;
   margin: 0;
   @media (min-width: 768px) {
-    top: 5%;
+    top: 20%;
     right: 15%;
+    font-size: 58px;
   }
 `;
 

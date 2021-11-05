@@ -16,7 +16,7 @@ const AboutMicke: React.FC<any> = () => {
             so if there are others out there who also like a nice personal print on a t-shirt 👀. So
             right now it is me, and my printer in Malmo doing the job. The t-shirts I also belive
             holds the best quality and does not leave any mark on our environment 💚 Right now the
-            page is a order on demand stage. So just either send me an email with your name and
+            page is in as order-on-demand stage. So just either send me an email with your name and
             print and I will come back to you 🤗
           </Paragraph>
         </TextContainer>
@@ -32,7 +32,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  border: 2px solid black;
   padding: 20px;
   color: #262a53;
   flex-direction: column;
@@ -42,8 +41,11 @@ export const Container = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  width: 400px;
+  width: 300px;
   margin: 20px;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `;
 
 export const Header = styled.h3`
@@ -57,10 +59,12 @@ export const Paragraph = styled.p`
   font-size: 20px;
 `;
 export const Image = styled.img`
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: 20px;
 
   @media (min-width: 768px) {
+    height: 400px;
+    width: 400px;
   }
 `;
