@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const Quote: React.FC<any> = () => {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <>

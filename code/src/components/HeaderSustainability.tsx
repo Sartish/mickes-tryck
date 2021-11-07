@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const HeaderSustainability: React.FC<any> = () => {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <>

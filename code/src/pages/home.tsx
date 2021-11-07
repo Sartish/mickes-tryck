@@ -17,7 +17,7 @@ import 'aos/dist/aos.css';
 
 const HomePage: React.FC<IPage> = () => {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
