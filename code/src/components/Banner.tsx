@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import tshirt from '../assets/t-shirt.jpg';
+import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <BannerContent>
-        <BannerHeader>
+        <BannerHeader data-aos="fade-up">
           Get your <br /> personal print <br /> on a sustainable t-shirt.
         </BannerHeader>
-        <BannerButton>Order</BannerButton>
-        <BannerLogo>
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/step1">
+          <BannerButton>Order</BannerButton>
+        </Link>
+        <BannerLogo data-aos="fade-right">
           Mickes Tryck<Dot>.</Dot>
         </BannerLogo>
       </BannerContent>

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import mollan from '../assets/hero.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Mollan: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
-    <Wrapper>
+    <Wrapper data-asos="fade-left">
       <IMG src={mollan} alt="hej" />
       <Text>
         Our t-shirt att printed on 100% recycble cotton and our printer is located in Möllan, Sweden
@@ -20,7 +25,6 @@ export const Wrapper = styled.div`
   jurstify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 8px 8px -4px lightblue;
   margin: 50px;
 `;
 

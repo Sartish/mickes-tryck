@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Instructions: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <Container>
-        <StepOne>
+        <StepOne data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/newsletter.png" />
             <Header>Step One</Header>
@@ -15,7 +20,7 @@ const Instructions: React.FC<any> = () => {
             </Text>
           </Wrapper>
         </StepOne>
-        <StepTwo>
+        <StepTwo data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/group.png" />
             <Header>Step Two</Header>
@@ -25,7 +30,7 @@ const Instructions: React.FC<any> = () => {
             </Text>
           </Wrapper>
         </StepTwo>
-        <StepThree>
+        <StepThree data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/copy-machine.png" />
             <Header>Step Three</Header>
@@ -34,7 +39,7 @@ const Instructions: React.FC<any> = () => {
             </Text>
           </Wrapper>
         </StepThree>
-        <StepFour>
+        <StepFour data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-tshirt-protest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" />
             <Header>Step Four</Header>

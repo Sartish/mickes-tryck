@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import wood from '../assets/wood.png';
 import profileImg from '../assets/profile-picture.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Quote: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <Container>
-        <Heading>“Hos Micke får man personlig service och kvalitet på tishan!”</Heading>
-        <Image src={profileImg} alt="profile picture" />
+        <Heading data-aos="fade-down">
+          “Hos Micke får man personlig service och kvalitet på tishan!”
+        </Heading>
+        <Image data-aos="fade-down" src={profileImg} alt="profile picture" />
         <ImageContainer>
-          <img src="https://img.icons8.com/fluency/48/000000/star.png" />
-          <img src="https://img.icons8.com/fluency/48/000000/star.png" />
-          <img src="https://img.icons8.com/fluency/48/000000/star.png" />
-          <img src="https://img.icons8.com/fluency/48/000000/star.png" />
+          <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
+          <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
+          <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
+          <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
         </ImageContainer>
       </Container>
     </>

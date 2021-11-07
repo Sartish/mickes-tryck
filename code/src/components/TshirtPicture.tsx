@@ -20,7 +20,6 @@ export const Wrapper = styled.div`
   jurstify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 8px 8px -4px lightblue;
 `;
 
 export const Text = styled.p`

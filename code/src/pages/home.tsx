@@ -12,8 +12,14 @@ import Banner from '../components/Banner';
 import Intructions from '../components/Instructions';
 import HeaderSustainability from '../components/HeaderSustainability';
 import AboutMicke from '../components/AboutMicke';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const HomePage: React.FC<IPage> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
     <>
       <Banner />
@@ -27,10 +33,10 @@ const HomePage: React.FC<IPage> = () => {
       <HeaderSustainability />
       <WrappingSecondSection>
         <MollanContainer>
-          <Mollan />
+          <Mollan data-aos="fade-left" />
         </MollanContainer>
         <TshirtpictureContainer>
-          <TshirtPicture />
+          <TshirtPicture data-aos="fade-left" />
         </TshirtpictureContainer>
       </WrappingSecondSection>
       <AboutMicke />

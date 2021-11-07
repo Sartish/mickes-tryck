@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const HeaderSustainability: React.FC<any> = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <>
-      <Wrapper>
+      <Wrapper data-aos="fade-up">
         <Heading>T-shirts are made of 100% recycled material</Heading>
       </Wrapper>
     </>

@@ -2,7 +2,6 @@ import IRoute from '../interfaces/route';
 import HomePage from '../pages/home';
 import AboutPage from '../pages/about';
 import OrderPage from '../pages/order';
-import NavBar from '../components/NavBar';
 import Navigation from '../components/Navigation';
 import StepOne from '../components/StepOne';
 import StepTwo from '../components/StepTwo';
@@ -27,12 +26,6 @@ const routes: IRoute[] = [
     path: '/order',
     name: 'OrderPage',
     component: OrderPage,
-    exact: true,
-  },
-  {
-    path: '/order',
-    name: 'NavBar',
-    component: NavBar,
     exact: true,
   },
   {
