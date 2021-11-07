@@ -20,11 +20,10 @@ const AboutMicke: React.FC<any> = () => {
           <Header data-aos="fade-left">Why did I start Mickes Tryck?</Header>
           <Paragraph data-aos="fade-left">
             I love t-shirts I love prints and I love nature⛰. So I kinda started this website to see
-            so if there are others out there who also like a nice personal print on a t-shirt 👀. So
-            right now it is me, and my printer in Malmo doing the job. The t-shirts I also belive
-            holds the best quality and does not leave any mark on our environment 💚 Right now the
-            page is in as order-on-demand stage. So just either send me an email with your name and
-            print and I will come back to you 🤗
+            so if there are others out there like me👀. So right now it is me, and my printer in
+            Malmo doing the job. The t-shirts I also belive holds the best quality and does not
+            leave any mark on our environment 💚 Right now the page is in as order-on-demand stage.
+            So just either send me an email with your name and print and I will come back to you 🤗
           </Paragraph>
         </TextContainer>
       </Container>
