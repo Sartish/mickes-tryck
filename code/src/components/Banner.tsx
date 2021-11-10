@@ -4,23 +4,16 @@ import tshirt from '../assets/t-shirt.jpg';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Navigation from './Navigation';
 
 const Banner: React.FC<any> = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <>
       <BannerContent>
-        <BannerHeader data-aos="fade-up">
-          Get your <br /> personal print <br /> on a sustainable t-shirt.
-        </BannerHeader>
-        <Link style={{ textDecoration: 'none', color: 'white' }} to="/step1">
-          <BannerButton>Order</BannerButton>
-        </Link>
-        <BannerLogo data-aos="fade-right">
-          Mickes Tryck<Dot>.</Dot>
-        </BannerLogo>
+        <Navigation />
+        <Container>
+          <BannerHeader data-aos="fade-up">Det lokala miljövänliga tryckeriet.</BannerHeader>
+        </Container>
       </BannerContent>
     </>
   );
@@ -37,17 +30,27 @@ export const BannerContent = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+  display: flex;
+  flex-direction: column;
   @media (min-width: 768px) {
     height: 600px;
   }
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+  }
+`;
+
 export const BannerHeader = styled.div`
   color: #ff7f50;
-  position: absolute;
-  top: 20%;
-  left: 10%;
   font-family: 'Scheherazade New', serif;
   font-size: 60px;
   line-height: 1em;
@@ -74,7 +77,7 @@ export const BannerButton = styled.button`
   left: 30%;
   @media (min-width: 768px) {
     top: 70%;
-    left: 50%;
+    left: calc(50% - 90px);
   }
 
 transition: background-color 1s ease-in, color 1s ease-in;

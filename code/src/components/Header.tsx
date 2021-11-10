@@ -10,13 +10,8 @@ const Header: React.FC<any> = () => {
   return (
     <>
       <Wrapper>
-        <Heading data-aos="fade-up">
-          Here are some of the benefits of <br /> your offer
-        </Heading>
-        <Text>
-          Explain what makes your product or service great. Talk about features in a way that
-          highlights the real value people get out of them.
-        </Text>
+        <Heading data-aos="fade-up">Vi fixar personliga tisha!</Heading>
+        <Text>Få ditt personliga tryck på en återvunnen t-shirt.</Text>
       </Wrapper>
     </>
   );
@@ -47,8 +42,9 @@ export const Heading = styled.h1`
 
 export const Text = styled.div`
   font-family: 'PT Sans', sans-serif;
-  font-size: 17px;
+  font-size: 24px;
   text-align: center;
   width: 400px;
-  line-height: 22px;
+  line-height: 1em;
+  color: #262a53;
 `;
