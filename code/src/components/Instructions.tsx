@@ -13,37 +13,37 @@ const Instructions: React.FC<any> = () => {
         <StepOne data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/newsletter.png" />
-            <Header>Step One</Header>
+            <Header>Step Ett</Header>
             <Text>
-              First fill out your request on email. You can attach a file of a print or photo that
-              you desire. <br />
+              Fyll först i din förfrågan på e-post. Inkludera storlek, fryck och önskad färg på
+              tishan.
             </Text>
           </Wrapper>
         </StepOne>
         <StepTwo data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/group.png" />
-            <Header>Step Two</Header>
+            <Header>Step Två</Header>
             <Text>
-              We will asses the print and get back to you with price and delivery and time
-              estimation.
+              Micke analyserar din förfrågan och återkommer till dig med pris och leverans och tid.
             </Text>
           </Wrapper>
         </StepTwo>
         <StepThree data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/copy-machine.png" />
-            <Header>Step Three</Header>
-            <Text>
-              If you are satisfied with our suggestion, we will start printing your t-shirt.
-            </Text>
+            <Header>Step tre</Header>
+            <Text>Om du är nöjd med Mickes förslag kommer han att börja trycka din t-shirt.</Text>
           </Wrapper>
         </StepThree>
         <StepFour data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-tshirt-protest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" />
-            <Header>Step Four</Header>
-            <Text>once we have printed your t-shirt. We will send it to you in the post.</Text>
+            <Header>Steg fyra</Header>
+            <Text>
+              Micke levererar tishan till dig personligen om du bor i Malmö. Annars på önskat
+              leveranssätt.
+            </Text>
           </Wrapper>
         </StepFour>
       </Container>

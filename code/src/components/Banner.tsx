@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import tshirt from '../assets/t-shirt.jpg';
+import tshirt from '../assets/mickes.png';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +25,7 @@ const blue = '#262A53';
 const ParagraphFont = "'Roboto', sans-serif;";
 
 export const BannerContent = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${tshirt});
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${tshirt});
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: pink;
   align-items: center;
   justify-content: center;
 
@@ -50,10 +49,13 @@ export const Container = styled.div`
 `;
 
 export const BannerHeader = styled.div`
-  color: #ff7f50;
+  background-image: linear-gradient(rgba(255, 127, 80, 0.6), rgba(255, 127, 80, 0.6));
+  color: white;
   font-family: 'Scheherazade New', serif;
   font-size: 60px;
+  padding: 20px;
   line-height: 1em;
+  margin-bottom: 40px;
   @media (min-width: 768px) {
     font-size: 70px;
   }

@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
 `;
 
 export const Heading = styled.h1`

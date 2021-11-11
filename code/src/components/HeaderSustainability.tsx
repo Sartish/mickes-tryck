@@ -10,7 +10,7 @@ const HeaderSustainability: React.FC<any> = () => {
   return (
     <>
       <Wrapper data-aos="fade-up">
-        <Heading>T-shirts are made of 100% recycled material</Heading>
+        <Heading>T-shirts är utan 100% återvunnet matrial</Heading>
       </Wrapper>
     </>
   );
@@ -27,9 +27,10 @@ export const Wrapper = styled.div`
 
 export const Heading = styled.h1`
   font-size: 38px;
-  color: #ff7f50;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   line-height: 1em;
   font-weight: 400;
+  color: #262a53;
+  transition: 0.5s;
 `;

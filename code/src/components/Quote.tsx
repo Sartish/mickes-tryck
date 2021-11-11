@@ -12,16 +12,17 @@ const Quote: React.FC<any> = () => {
   return (
     <>
       <Container>
-        <Heading data-aos="fade-down">
-          “Hos Micke får man personlig service och kvalitet på tishan!”
-        </Heading>
         <Image data-aos="fade-down" src={profileImg} alt="profile picture" />
         <ImageContainer>
           <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
           <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
           <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
           <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
+          <img data-aos="fade-left" src="https://img.icons8.com/fluency/48/000000/star.png" />
         </ImageContainer>
+        <Heading data-aos="fade-down">
+          “Hos Micke får man personlig service och kvalitet på tishan!”
+        </Heading>
       </Container>
     </>
   );
@@ -35,45 +36,40 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 `;
 
 export const Heading = styled.h1`
   color: white;
   position: absolute;
-  bottom: 20%;
-  left: 30%;
+  display: flex;
   font-family: 'Scheherazade New', serif;
   font-size: 30px;
   line-height: 1em;
+  margin-top: 300px;
 `;
 
 export const Image = styled.img`
   position: absolute;
   height: 200px;
   width: 200px;
-  border-radius: 50%; /* så vi får bilden rund*/
+  border-radius: 50%;
   border: 4px solid white;
-  top: 15%;
-  left: 30%;
+  margin-top: -120px;
+
   @media (min-width: 768px) {
-    top: 15%;
-    left: 47%;
   }
 `;
 
 export const ImageContainer = styled.div`
   position: absolute;
-  top: 50%;
-  left: 30%;
+  margin-top: 170px;
 
   @media (min-width: 768px) {
-    top: 55%;
-    left: 47%;
   }
 `;

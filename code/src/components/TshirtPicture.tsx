@@ -6,9 +6,7 @@ const TshirtPicture: React.FC<any> = () => {
   return (
     <Wrapper>
       <IMG src={tshirt} alt="hej" />
-      <Text>
-        Our t-shirt att printed on 100% recycble cotton and our printer is located in Möllan, Sweden
-      </Text>
+      <Text>T-shirtsen är gjorda på återvunnen bomull och återvunna plastflaskor.</Text>
     </Wrapper>
   );
 };

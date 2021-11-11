@@ -61,7 +61,7 @@ const OrderButton = styled.button`
 
 export const BannerLogo = styled.h1`
   font-family: 'Permanent Marker', cursive;
-  color: white;
+  color: #ff7f50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,5 +71,5 @@ export const BannerLogo = styled.h1`
 export const Dot = styled.span`
   margin-bottom: 30px;
   font-size: 80px;
-  color: #ff7f50;
+  color: #262a53;
 `;

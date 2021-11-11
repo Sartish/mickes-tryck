@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { Message, useForm } from 'react-hook-form';
 // import { useData } from "./DataContext";
 import MainContainer from './MainContainer';
 import Form from './Form';
@@ -10,17 +10,20 @@ import { TextField } from '@material-ui/core';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { FileInput } from './FileInput';
 import * as yup from 'yup';
+import emailjs from 'emailjs-com';
 
 type Profile = {
   firstname: string;
   lastname: string;
   email: string;
+  message: string;
 };
 
 const schema = yup.object().shape({
   firstname: yup.string().required('Firstname is required'),
   lastname: yup.string().required('Lastname is required'),
   email: yup.string().email('Must be a valid email').max(255).required('Email is required'),
+  message: yup.string().required('message is required, ex size of t-shirt'),
 });
 
 const StepOne = () => {
@@ -32,7 +35,21 @@ const StepOne = () => {
 
   // data received in type of profile
   const onSubmit = (data: Profile) => {
-    console.log(data);
+    emailjs.init('user_Qp21GQ9MzV22NDKnb7RgF');
+    emailjs
+      .send('service_uvknhkh', 'template_gxwap2s', {
+        from_name: data.firstname + data.lastname,
+        reply_to: data.email,
+        message: data.message,
+      })
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        },
+      );
   };
 
   return (
@@ -68,13 +85,17 @@ const StepOne = () => {
           helperText={errors?.email?.message}
           required
         />
-        <FileInput name="files" control={control} />
+        {/* <FileInput name="files" control={control} /> */}
         <TextField
-          id="outlined-multiline-static"
-          label="messege"
+          ref={register}
+          label="message"
+          name="message"
+          id="message"
+          error={!!errors.message}
+          helperText={errors?.message?.message}
+          required
           multiline
           rows={4}
-          defaultValue="other info you want to add?"
           fullWidth
         />
         <FormButton>Next</FormButton>

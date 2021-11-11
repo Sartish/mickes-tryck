@@ -6,9 +6,7 @@ const Mollan: React.FC<any> = () => {
   return (
     <Wrapper data-asos="fade-left">
       <IMG src={mollan} alt="hej" />
-      <Text>
-        Our t-shirt att printed on 100% recycble cotton and our printer is located in Möllan, Sweden
-      </Text>
+      <Text>Våra T-shirts använder 99% mindre vatten och genererar 50% mindre CO2-utsläpp.</Text>
     </Wrapper>
   );
 };
