@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import wood from '../assets/wood.png';
+import wood from '../assets/woods.png';
 import profileImg from '../assets/profile-picture.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +31,7 @@ const Quote: React.FC<any> = () => {
 export default Quote;
 
 export const Container = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${wood});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${wood});
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,13 +45,15 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.h1`
+  background-image: linear-gradient(rgba(255, 127, 80, 0.6), rgba(255, 127, 80, 0.6));
+  padding: 20px;
   color: white;
   position: absolute;
   display: flex;
   font-family: 'Scheherazade New', serif;
   font-size: 30px;
   line-height: 1em;
-  margin-top: 300px;
+  margin-top: 340px;
 `;
 
 export const Image = styled.img`

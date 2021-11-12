@@ -13,7 +13,7 @@ const Instructions: React.FC<any> = () => {
         <StepOne data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/newsletter.png" />
-            <Header>Step Ett</Header>
+            <Header>Steg ett</Header>
             <Text>
               Fyll först i din förfrågan på e-post. Inkludera storlek, fryck och önskad färg på
               tishan.
@@ -23,7 +23,7 @@ const Instructions: React.FC<any> = () => {
         <StepTwo data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/group.png" />
-            <Header>Step Två</Header>
+            <Header>Step två</Header>
             <Text>
               Micke analyserar din förfrågan och återkommer till dig med pris och leverans och tid.
             </Text>
@@ -32,7 +32,7 @@ const Instructions: React.FC<any> = () => {
         <StepThree data-aos="fade-left">
           <Wrapper>
             <img src="https://img.icons8.com/doodle/48/000000/copy-machine.png" />
-            <Header>Step tre</Header>
+            <Header>Steg tre</Header>
             <Text>Om du är nöjd med Mickes förslag kommer han att börja trycka din t-shirt.</Text>
           </Wrapper>
         </StepThree>

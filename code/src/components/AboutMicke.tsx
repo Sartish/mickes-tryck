@@ -19,11 +19,11 @@ const AboutMicke: React.FC<any> = () => {
         <TextContainer>
           <Header data-aos="fade-left">Why did I start Mickes Tryck?</Header>
           <Paragraph data-aos="fade-left">
-            I love t-shirts I love prints and I love nature⛰. So I kinda started this website to see
-            so if there are others out there like me👀. So right now it is me, and my printer in
-            Malmo doing the job. The t-shirts I also belive holds the best quality and does not
-            leave any mark on our environment 💚 Right now the page is in as order-on-demand stage.
-            So just either send me an email with your name and print and I will come back to you 🤗
+            Jag älskar t-shirts Jag älskar tryck och jag älskar naturen⛰. Så jag startade den här
+            webbplatsen för att om det finns andra där ute som jag👀. Så just nu är det jag och min
+            skrivare i Malmö gör jobbet. T-shirts jag tror också håller den bästa kvaliteten och gör
+            det utan några avtryck i vår miljö 💚 Just nu är sidan i ett order-on-demand-stadium. Så
+            antingen skicka mig ett mail med ditt namn och skriv ut så återkommer jag till dig.
           </Paragraph>
         </TextContainer>
       </Container>
@@ -34,10 +34,10 @@ const AboutMicke: React.FC<any> = () => {
 export default AboutMicke;
 
 export const Container = styled.div`
+  background-color: #f2d7d5;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   padding: 20px;
   color: #262a53;
   flex-direction: column;
@@ -55,9 +55,13 @@ export const TextContainer = styled.div`
 `;
 
 export const Header = styled.h3`
-  font-size: 38px;
+  background-image: linear-gradient(rgba(255, 127, 80, 0.6), rgba(255, 127, 80, 0.6));
+  padding: 20px;
+  font-size: 20px;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: bold;
+  align-text: center;
 `;
 
 export const Paragraph = styled.p`
