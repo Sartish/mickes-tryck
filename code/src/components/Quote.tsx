@@ -57,11 +57,11 @@ export const Heading = styled.h1`
   line-height: 1em;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 400px;
+  position: relative;
+  margin-top: 10vh;
 
   @media (min-width: 768px) {
     font-size: 30px;
-    margin-top: 300px;
   }
 `;
 
@@ -70,9 +70,6 @@ export const Image = styled.img`
   width: 200px;
   border-radius: 50%;
   border: 4px solid white;
-  @media (min-width: 768px) {
-    margin-top: -120px;
-  }
 `;
 
 export const ImageContainer = styled.div`
