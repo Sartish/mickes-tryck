@@ -17,13 +17,13 @@ const AboutMicke: React.FC<any> = () => {
           alt="profile picture"
         />
         <TextContainer>
-          <Header data-aos="fade-left">Why did I start Mickes Tryck?</Header>
+          <Header data-aos="fade-left">Varför startade jag Mickes tryck?</Header>
           <Paragraph data-aos="fade-left">
-            Jag älskar t-shirts Jag älskar tryck och jag älskar naturen⛰. Så jag startade den här
-            webbplatsen för att om det finns andra där ute som jag👀. Så just nu är det jag och min
-            skrivare i Malmö gör jobbet. T-shirts jag tror också håller den bästa kvaliteten och gör
-            det utan några avtryck i vår miljö 💚 Just nu är sidan i ett order-on-demand-stadium. Så
-            antingen skicka mig ett mail med ditt namn och skriv ut så återkommer jag till dig.
+            Jag älskar t-shirts! Jag älskar tryck och vill vara rädd om naturen⛰. Så jag startade
+            den här webbplatsen för att om det finns andra där ute som känner likadant👀. Så just nu
+            är det jag och min skrivare i Malmö som gör jobbet. Tishorna håller en bra kvalitet utan
+            att göra några avtryck i vår miljö 💚 Just nu är sidan i ett order-on-demand stadie. Så
+            skicka mig ett mail under "beställning".
           </Paragraph>
         </TextContainer>
       </Container>
@@ -61,13 +61,16 @@ export const Header = styled.h3`
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: bold;
-  align-text: center;
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
 `;
+
 export const Image = styled.img`
   height: 300px;
   width: 300px;
