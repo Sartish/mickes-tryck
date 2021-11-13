@@ -39,6 +39,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   @media (min-width: 768px) {
     height: 600px;
@@ -54,31 +55,27 @@ export const Heading = styled.h1`
   font-family: 'Scheherazade New', serif;
   font-size: 20px;
   line-height: 1em;
-  margin-top: 340px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 400px;
 
   @media (min-width: 768px) {
     font-size: 30px;
+    margin-top: 300px;
   }
 `;
 
 export const Image = styled.img`
-  position: absolute;
   height: 200px;
   width: 200px;
   border-radius: 50%;
   border: 4px solid white;
-  margin-top: -160px;
   @media (min-width: 768px) {
     margin-top: -120px;
   }
 `;
 
 export const ImageContainer = styled.div`
-  position: absolute;
-  margin-top: 170px;
-
   @media (min-width: 768px) {
   }
 `;

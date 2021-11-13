@@ -66,7 +66,6 @@ export const BannerLogo = styled.h1`
   align-items: center;
   flex-direaction: row;
   margin-left: 30px;
-  border: black solid 2px;
   @media (min-width: 768px) {
     margin-top: 50px;
   }
