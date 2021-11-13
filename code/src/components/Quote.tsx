@@ -32,7 +32,7 @@ export default Quote;
 
 export const Container = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${wood});
-  height: 600px;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -41,6 +41,7 @@ export const Container = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
+    height: 600px;
   }
 `;
 
@@ -51,9 +52,15 @@ export const Heading = styled.h1`
   position: absolute;
   display: flex;
   font-family: 'Scheherazade New', serif;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1em;
   margin-top: 340px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 export const Image = styled.img`
@@ -62,9 +69,9 @@ export const Image = styled.img`
   width: 200px;
   border-radius: 50%;
   border: 4px solid white;
-  margin-top: -120px;
-
+  margin-top: -160px;
   @media (min-width: 768px) {
+    margin-top: -120px;
   }
 `;
 

@@ -9,7 +9,8 @@ const Navigation: React.FC = () => {
     <>
       <NavigationBar>
         <BannerLogo>
-          Mickes Tryck<Dot>.</Dot>
+          <Logo>Mickes Tryck</Logo>
+          <Dot>.</Dot>
         </BannerLogo>
         <NavLink style={{ paddingLeft: 5, textDecoration: 'none' }} to="/step1">
           <OrderButton>Beställ</OrderButton>
@@ -60,16 +61,33 @@ const OrderButton = styled.button`
 `;
 
 export const BannerLogo = styled.h1`
-  font-family: 'Permanent Marker', cursive;
-  color: #ff7f50;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direaction: row;
   margin-left: 30px;
+  border: black solid 2px;
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+`;
+
+const Logo = styled.h1`
+  font-family: 'Permanent Marker', cursive;
+  color: #ff7f50;
+  font-size: 20px;
+  margin: 0;
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const Dot = styled.span`
-  margin-bottom: 30px;
-  font-size: 80px;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 17px;
+  font-size: 40px;
   color: #262a53;
+  @media (min-width: 768px) {
+    font-size: 80px;
+  }
 `;

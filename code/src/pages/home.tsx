@@ -65,7 +65,7 @@ export const WrappingSecondSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: 768px) {
     flex-direction: row;

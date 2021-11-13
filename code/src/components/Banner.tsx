@@ -43,19 +43,21 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   @media (min-width: 768px) {
   }
 `;
 
-export const BannerHeader = styled.div`
+export const BannerHeader = styled.h1`
   background-image: linear-gradient(rgba(255, 127, 80, 0.6), rgba(255, 127, 80, 0.6));
   color: white;
   font-family: 'Scheherazade New', serif;
-  font-size: 60px;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 20px;
   line-height: 1em;
   margin-bottom: 40px;
+  text-align: center;
   @media (min-width: 768px) {
     font-size: 70px;
   }
@@ -88,24 +90,4 @@ transition: background-color 1s ease-in, color 1s ease-in;
   background-color: ${blue};
   border:1px solid ${blue};
   transition: background-color 0.5s ease-out, color 0.5s ease-out;
-`;
-
-export const BannerLogo = styled.h1`
-  font-family: 'Permanent Marker', cursive;
-  color: white;
-  font-size: 38px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  @media (min-width: 768px) {
-    top: 20%;
-    right: 15%;
-    font-size: 58px;
-  }
-`;
-
-export const Dot = styled.span`
-  font-size: 80px;
-  color: #ff7f50;
 `;
