@@ -3,6 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import logo from '../assets/logo.png';
+import swal from 'sweetalert';
 
 const Navigation: React.FC = () => {
   return (
@@ -12,9 +13,15 @@ const Navigation: React.FC = () => {
           <Logo>Mickes Tryck</Logo>
           <Dot>.</Dot>
         </BannerLogo>
-        <NavLink style={{ paddingLeft: 5, textDecoration: 'none' }} to="/step1">
-          <OrderButton>Beställ</OrderButton>
-        </NavLink>
+          <OrderButton onClick={() => {
+              swal({
+                  title: 'Beställ',
+                  text: 'Skicka ett mail till micke@mickestryck.se med information om vad du vill ha tryckt. Vi återkommer med pris och hur långtid det kommer ta.',
+                  icon: 'info',
+                  // @ts-ignore
+                  button: 'ok',
+              });
+          }}>Beställ</OrderButton>
       </NavigationBar>
     </>
   );

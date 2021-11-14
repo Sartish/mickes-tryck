@@ -8,6 +8,7 @@ const Footer: React.FC<any> = () => {
         <BannerLogo>
           Mickes Tryck<Dot>.</Dot>
         </BannerLogo>
+          <Heading>micke@mickestryck.se</Heading>
         <Heading>@2021 Mickes tryck. All rights reserved.</Heading>
       </Container>
     </>
@@ -25,7 +26,7 @@ export const Container = styled.div`
   background-color: #262a53;
   height: 100px;
 `;
-export const Heading = styled.h1`
+export const Heading = styled.p`
   font-size: 12px;
   display: flex;
   color: white;

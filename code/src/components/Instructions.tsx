@@ -15,7 +15,7 @@ const Instructions: React.FC<any> = () => {
             <img src="https://img.icons8.com/doodle/48/000000/newsletter.png" />
             <Header>Steg ett</Header>
             <Text>
-              Fyll först i din förfrågan på e-post. Inkludera storlek, fryck och önskad färg på
+              Fyll först i din förfrågan på e-post. Inkludera storlek, tryck och önskad färg på
               tishan.
             </Text>
           </Wrapper>
