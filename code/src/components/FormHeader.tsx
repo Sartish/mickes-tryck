@@ -18,7 +18,7 @@ const FormHeader: React.FC<any> = () => {
   return (
     <>
       <Typography className={styles.root} component="h1">
-        I want my print on a t-shirt
+        Skicka ett mail till Micke här!
       </Typography>
     </>
   );

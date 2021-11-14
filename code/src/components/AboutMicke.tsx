@@ -23,7 +23,7 @@ const AboutMicke: React.FC<any> = () => {
             den här webbplatsen för att om det finns andra där ute som känner likadant👀. Så just nu
             är det jag och min skrivare i Malmö som gör jobbet. Tishorna håller en bra kvalitet utan
             att göra några avtryck i vår miljö 💚 Just nu är sidan i ett order-on-demand stadie. Så
-            skicka mig ett mail under "beställning".
+            skicka mail till micke@mickestryck.se med din förfrågan.
           </Paragraph>
         </TextContainer>
       </Container>
