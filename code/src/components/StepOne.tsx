@@ -11,6 +11,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { FileInput } from './FileInput';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 type Profile = {
   firstname: string;
@@ -23,7 +24,6 @@ const schema = yup.object().shape({
   firstname: yup.string().required('Firstname is required'),
   lastname: yup.string().required('Lastname is required'),
   email: yup.string().email('Must be a valid email').max(255).required('Email is required'),
-  message: yup.string().required('message is required, ex size of t-shirt'),
 });
 
 const StepOne = () => {
@@ -45,6 +45,13 @@ const StepOne = () => {
       .then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
+          // @ts-ignore
+          swal({
+            text: 'Tack! Micke återkommer inom kort.',
+            icon: 'success',
+            // @ts-ignore
+            button: 'ok',
+          });
         },
         (err) => {
           console.log('FAILED...', err);
@@ -98,7 +105,7 @@ const StepOne = () => {
           rows={4}
           fullWidth
         />
-        <FormButton>Next</FormButton>
+        <FormButton>Skicka</FormButton>
       </Form>
     </MainContainer>
   );
